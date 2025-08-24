@@ -116,8 +116,8 @@ jobs:
 
     - name: Repo Sync
       run: |
+        cd /runner/Action-TWRP-Builder/Action-TWRP-Builder/workspace
         repo sync -j$(nproc --all) --force-sync
-      working-directory: workspace
 
     - name: Clone device tree
       run: |
